@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        .tl { position: absolute; top: 10%; left: 10%; right: 40%; bottom: 40%; background: rgb(238, 180, 115); border:solid #000; border-width: 5px 5px 5px 5px; }
+        .tr { position: absolute; top: 10%; left: 60%; right: 10%; bottom: 40%; background: rgb(252, 209, 152); border:solid #000; border-width: 5px 5px 5px 5px; }
+        .bl { position: absolute; top: 60%; left: 10%; right: 40%; bottom: 10%; background: rgb(139, 235, 187); border:solid #000; border-width: 5px 5px 5px 5px; }
+        .br { position: absolute; top: 60%; left: 60%; right: 10%; bottom: 10%; background: rgb(171, 230, 235); border:solid #000; border-width: 5px 5px 5px 5px; } 
+        .p1 {
+            color: black;
+            text-indent: 200px;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-large;
+            }
+        .p2 {
+            color: black;
+            text-indent: 200px;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner d-flex align-items-center" style="background-image: url('images/banner.jpg');" id="home"></div>
+<div class="tl">
+    <p class="p1">Model Diagnosis</p>
+    <p class="p2">{{say}} </p>
+</div>
+<div class="tr">
+    <p class="p1">KB Diagnosis</p>
+    <p class="p2">{{sayAgain}} </p>
+</div>
+<div class="bl"></div>
+<div class="br"></div>
+</body>
+</html>

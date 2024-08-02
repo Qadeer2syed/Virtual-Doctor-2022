@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="http://127.0.0.1:5000/hello" method="POST">
+
+		<!--input type="number" name="age" data-conv-question="Hi! I am your health assistant today. Please, Enter your age"-->
+
+		<!--select data-conv-question="Please, specify your gender" name="gender">
+			<option value="Male">Male </option>
+			<option value="Female">Female </option>
+		  </select-->
+
+		  <select data-conv-question="Do you have any itching?" name="itching">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have any skin rash?" name="skin_rash">
+			<option value=1>Yes ?</option>
+			<option value=0 >No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have nodal skin eruptions?" name="nodal_skin_eruptions">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have continuous sneezing?" name="continuous_sneezing">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you experience shivering?" name="shivering">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have chills?" name="chills">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have joint pain ?" name="joint_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have stomach pain?" name="stomach_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have acidity?" name="acidity">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have ulcers on tongue?" name="ulcers_on_tongue">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have muscle wasting?" name="muscle_wasting">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have vomitings?" name="vomiting">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have burning micturition?" name="burning_micturition">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have spotting urination?" name="spotting_urination">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have fatigue?" name="fatigue">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have weight gain?" name="weight_gain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have anxiety?" name="anxiety">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have cold hands and feets?" name="cold_hands_and_feets">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have mood swings?" name="mood_swings">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have weight loss?" name="weight_loss">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have restlessness?" name="restlessness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have lethargy?" name="lethargy">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have patches in throat?" name="patches_in_throat">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have irregular sugar level?" name="irregular_sugar_level">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have cough?" name="cough">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have high fever?" name="high_fever">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have sunken eyes?" name="sunken_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have breathlessness?" name="breathlessness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have sweating?" name="sweating">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have dehydration?" name="dehydration">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have indigestion?" name="indigestion">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have headache?" name="headache">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have yellowish skin?" name="yellowish_skin">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have dark urine?" name="dark_urine">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have nausea?" name="nausea">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have loss of appetite?" name="loss_of_appetite">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have pain behind the eyes?" name="pain_behind_the_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have back pain?" name="back_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have constipation?" name="constipation">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have abdominal pain?" name="abdominal_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have diarrhoea?" name="diarrhoea">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have mild fever?" name="mild_fever">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have yellow urine?" name="yellow_urine">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have yellowing of eyes?" name="yellowing_of_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have acute liver failure?" name="acute_liver_failure">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have fluid overload?" name="fluid_overload">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swelling of stomach?" name="swelling_of_stomach">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swelled lymph nodes?" name="swelled_lymph_nodes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have malaise?" name="malaise">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have blurred and distorted vision?" name="blurred_and_distorted_vision">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have phlegm?" name="phlegm">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have throat irritation?" name="throat_irritation">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have redness of eyes?" name="redness_of_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have sinus pressure?" name="sinus_pressure">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have runny nose?" name="runny_nose">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have congestion?" name="congestion">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have chest pain?" name="chest_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have weakness in limbs?" name="weakness_in_limbs">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have fast heart rate?" name="fast_heart_rate">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have pain during bowel movements?" name="pain_during_bowel_movements">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have pain in anal region?" name="pain_in_anal_region">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have bloody stool?" name="bloody_stool">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have irritation in anus?" name="irritation_in_anus">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have neck pain?" name="neck_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have dizziness?" name="dizziness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have cramps?" name="cramps">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have bruising?" name="bruising">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have obesity?" name="obesity">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swollen legs?" name="swollen_legs">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swollen blood vessels?" name="swollen_blood_vessels">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have puffy face and eyes?" name="puffy_face_and_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have enlarged thyroid?" name="enlarged_thyroid">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have brittle nails?" name="brittle_nails">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swollen extremeties?" name="swollen_extremeties">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have excessive hunger?" name="excessive_hunger">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have extra marital contacts?" name="extra_marital_contacts">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have drying and tingling lips?" name="drying_and_tingling_lips">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have slurred speech?" name="slurred_speech">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have knee pain?" name="knee_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have hip joint pain?" name="hip_joint_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have muscle weakness?" name="muscle_weakness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have stiff neck?" name="stiff_neck">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have swelling joints?" name="swelling_joints">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have movement stiffness?" name="movement_stiffness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have spinning movements?" name="spinning_movements">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have loss of balance?" name="loss_of_balance">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have unsteadiness?" name="unsteadiness">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have weakness of one body side?" name="weakness_of_one_body_side">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have loss of smell?" name="loss_of_smell">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have bladder discomfort?" name="bladder_discomfort">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have foul smell of urine?" name="foul_smell_of_urine">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have continuous feel of urine?" name="continuous_feel_of_urine">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have passage of gases?" name="passage_of_gases">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have internal itching?" name="internal_itching">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have toxic look(typhos)?" name="toxic_look_typhos">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have depression?" name="depression">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have irritability?" name="irritability">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have muscle pain?" name="muscle_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have altered sensorium?" name="altered_sensorium">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have red_spots_over_body?" name="red_spots_over_body">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have belly_pain?" name="belly_pain">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have abnormal menstruation?" name="abnormal_menstruation">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have dischromic patches?" name="dischromic_patches">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have watering_from_eyes?" name="watering_from_eyes">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have increased appetite?" name="increased_appetite">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have polyuria?" name="polyuria">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have family_history?" name="family_history">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have mucoid sputum?" name="mucoid_sputum">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have rusty sputum?" name="rusty_sputum">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have lack of concentration?" name="lack_of_concentration">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have visual disturbances?" name="visual_disturbances">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have receiving blood transfusion?" name="receiving_blood_transfusion">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have been receiving unsterile injections?" name="receiving_unsterile_injections">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have coma?" name="coma">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have stomach bleeding?" name="stomach_bleeding">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have distention of abdomen?" name="distention_of_abdomen">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have history of alcohol consumption?" name="history_of_alcohol_consumption">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have fluid overload?" name="fluid_overload">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have blood in sputum?" name="blood_in_sputum">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have prominent veins on calf?" name="prominent_veins_on_calf">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have palpitations?" name="palpitations">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have painful_walking?" name="painful_walking">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have pus filled pimples?" name="pus_filled_pimples">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have blackheads?" name="blackheads">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have scurring?" name="scurring">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have skin peeling?" name="skin_peeling">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have silver like dusting?" name="silver_like_dusting">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have small dents in nails?" name="small_dents_in_nails">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have inflammatory nails?" name="inflammatory_nails">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have blister?" name="blister">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have red sore around nose?" name="red_sore_around_nose">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		  <select data-conv-question="Do you have yellow crust ooze?" name="yellow_crust_ooze">
+			<option value=1>Yes ?</option>
+			<option value=0>No ?</option>
+		  </select>
+
+		 
+
+		  
+
+		  
+		  
+     <!---
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">Website Development ?</option>
+        <option value="DigitalMarketing">Digital Marketing ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Conform</option>
+      </select>
+	-->
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/banner.jpg');" id="home">
+	<ul class="socila_links">
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>The Smart Doctor</h1>
+					<p>Click on the chat icon below to start your check-up. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				<h2 class="bdr-btm">More About Smart Doctor</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#contact" class="btn1">Contact Us</a>	
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Features</h3>
+					<ul>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Perks</h3>
+					<ul>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+						<li><strong>Lorem ipsum dolor</strong> <br> sit amet, consectetur adipisicing</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">Portfolio</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port1.jpg');">
+					<h3>Medical checkup within minutes</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port2.jpg');">
+					<h3>Wide accessibility</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port3.jpg');">
+					<h3>Recommended Prescriptions</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port4.jpg');">
+					<h3>Complete health diagnosis</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port5.jpg');">
+					<h3>Powered by the concepts of AI</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port6.jpg');">
+					<h3>Empowered by Machine Learning</h3>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact-section d-md-flex" id="contact">
+  <div class="col-md-6 col-12 contact_section_left">
+    <div class="contact_box">
+      <i class="fa fa-phone"></i>
+      <h3>Phone</h3>
+      <p>512-421-3940</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-envelope"></i>
+      <h3>Email</h3>
+      <p>support@yourdomain.com</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-map-marker"></i>
+      <h3>Address</h3>
+      <p>1234 Lorem ipsum dolor</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-12 contact_section_right d-flex align-items-center">
+    <div class="contact_box">
+      <h2 class="bdr-btm">Get In Touch</h2>
+      <form>
+        <div>
+          <input type="text" name="" placeholder="Name">
+          <input type="text" name="" placeholder="Email">
+          <input type="text" name="" placeholder="Subject">
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" class="inline-block" name="" value="Send Message">
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
